@@ -21,7 +21,7 @@ class Session {
     function __construct($agentId,$endpoint,$clientKey,$options = []) {
         $this->agentId = $agentId;
         $this->endpoint = $endpoint;
-        $this->client = new GuzzleHttp\Client(array_merge([ 'headers' => [ 'client-key' => $clientKey, 'Content-type' => 'application/json' ] ], $options));
+        $this->client = new \GuzzleHttp\Client(array_merge([ 'headers' => [ 'client-key' => $clientKey, 'Content-type' => 'application/json' ] ], $options));
     }
 
     function init($username) {
