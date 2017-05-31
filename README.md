@@ -15,7 +15,7 @@ composer require dangoscomb/securid
 
 ```php
 
-$sess = new \SecurID\Session('AGENT_ID','https://rsa.yourdomain.com:5555','agentKey', [ 'verify' => false ] );
+$sess = new \SecurID\Session('AGENT_ID','https://rsa.yourdomain.com:5555','ACCESS_KEY', [ 'verify' => false ] );
 $sess->init('USERNAME');
 if($sess->verify('PIN+KEY')) {
         echo "\nAUTHED\n";

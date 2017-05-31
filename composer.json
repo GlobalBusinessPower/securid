@@ -3,6 +3,7 @@
     "description": "Implementation of the RSA SecurID Authentication API",
     "type": "library",
     "homepage": "https://github.com/dangoscomb/securid",
+    "license": "Apache-2.0",
     "require": {
     	"guzzlehttp/guzzle": "6.1.*",
     	"ramsey/uuid": "^3.6"

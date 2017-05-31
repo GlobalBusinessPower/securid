@@ -1,12 +1,12 @@
 <?php
 
 namespace SecurID;
-use GuzzleHttp\Handler\CurlHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Client as HttpClient;
-use GuzzleHttp\MessageFormatter;
-use GuzzleHttp\Middleware;
-use Ramsey\Uuid\Uuid;
+use \GuzzleHttp\Handler\CurlHandler;
+use \GuzzleHttp\HandlerStack;
+use \GuzzleHttp\Client as HttpClient;
+use \GuzzleHttp\MessageFormatter;
+use \GuzzleHttp\Middleware;
+use \Ramsey\Uuid\Uuid;
 
 class Session {
 
