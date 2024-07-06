@@ -11,7 +11,7 @@ composer require dangoscomb/securid
 ```
 
 
-## Example
+## Example (Original)
 
 ```php
 
@@ -22,6 +22,26 @@ if($sess->verify('PIN+KEY')) {
 }
 else {
         echo "\nFAIL :(\n";
+}
+
+```
+
+## Example (Updated June 2024 by JMediavilla)
+
+```php
+$username = $this->input->post('username'); //User Name used in LDAP Protocol or Domain User ID
+$otp = $this->input->post('otp'); //OTP Number from Mobile Phone (Token Number Codes)
+
+$AGENT_ID = "<IP Address of the Server>";
+$ACCESS_KEY = "<Access Key Generated in RSA API Key Management>"; 
+$URL="<URL of the MFA Authenticator Server>";
+
+$sess = new \SecurID\Session($AGENT_ID,$URL,$ACCESS_KEY, [ 'verify' => false ] ); //Call new Session in RSA MFA
+$sess->init($username); //Initialized User Name
+
+if($sess->verify($otp)) //Verify the OTP Code from Mobile Phone
+{
+  // RSA MFA Authenticated -> Proceed to Login Page;
 }
 
 ```
