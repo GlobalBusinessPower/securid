@@ -26,7 +26,7 @@ else {
 
 ```
 
-## Example (Updated June 2024 by Jason Mediavilla)
+## Example (Updated July 2024 by Jason Mediavilla)
 
 ```php
 $username = $this->input->post('username'); //User Name used in LDAP Protocol or Domain User ID
