@@ -45,3 +45,17 @@ if($sess->verify($otp)) //Verify the OTP Code from Mobile Phone
 }
 
 ```
+Code Igniter / PHP File
+#Add file to Auto Load Composer File
+
+```bash
+require 'vendor/autoload.php';
+```
+
+Code Igniter / config.php
+#Enable Autoload in Code Igniter config file
+
+```bash
+$config['composer_autoload'] = TRUE;
+```
+
