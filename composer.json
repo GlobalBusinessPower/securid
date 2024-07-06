@@ -11,6 +11,7 @@
     "autoload": {
     	"psr-4": {
      		"SecurID\\" : "src/"
-    	}
+    	},
+        "files": ["vendor/src/Session.php", "vendor/src/Session.php"]
   	}
 }
